@@ -10,6 +10,16 @@ namespace MathMagician
   {
     public int PrintIntegers()
     {
+      return 0;
+    }
+
+    public int PrintFibonacci()
+    {
+      return 0;
+    }
+
+    public int PrintPrimes()
+    {
       return 2;
     }
   }
