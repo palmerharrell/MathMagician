@@ -2,25 +2,34 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MathMagician
 {
   public class MathMethods
   {
-    public int PrintIntegers()
+
+    public void PrintIntegers()
     {
-      return 0;
+      int integer = 0;
+      while(!Console.KeyAvailable)
+      {
+        Console.WriteLine(integer);
+        integer++;
+        Thread.Sleep(500);
+      }
     }
 
-    public int PrintFibonacci()
+    public void PrintFibonacci()
     {
-      return 0;
+      //return 0;
     }
 
-    public int PrintPrimes()
+    public void PrintPrimes()
     {
-      return 2;
+      //return 2;
     }
+
   }
 }
