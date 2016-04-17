@@ -11,11 +11,7 @@ namespace MathMagician
   {
     static void Main(string[] args)
     {
-      //while (!Console.KeyAvailable) // Loop until any key is pressed
-      //{
-      //  Console.WriteLine("Still going...");
-      //  Thread.Sleep(500);
-      //}
+      
       MathMethods mathMethods = new MathMethods();
       int userChoice;
       bool choiceMade = false;
@@ -39,10 +35,12 @@ namespace MathMagician
             break;
           case 2:
             Console.WriteLine("Fibonacci Sequence:");
+            mathMethods.PrintFibonacci();
             choiceMade = true;
             break;
           case 3:
             Console.WriteLine("All Primes");
+            mathMethods.PrintPrimes();
             choiceMade = true;
             break;
           default:
@@ -52,7 +50,7 @@ namespace MathMagician
             break;
         }
       }
-      //mathMethods.PrintIntegers();
+      
     }
   }
 }
