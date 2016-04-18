@@ -39,7 +39,7 @@ namespace MathMagician
             choiceMade = true;
             break;
           case 3:
-            Console.WriteLine("All Primes");
+            Console.WriteLine("Every Prime Number:");
             mathMethods.PrintPrimes();
             choiceMade = true;
             break;

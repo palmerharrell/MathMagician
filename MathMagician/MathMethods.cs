@@ -19,12 +19,30 @@ namespace MathMagician
         currNum++;
         Thread.Sleep(500);
       }
-    }
+    } // PrintIntegers
 
     public void PrintFibonacci()
     {
-      Console.WriteLine("PrintFibonacci() Executed");
-    }
+      int currNum = 1;
+      int prevNum1 = 1;
+      int prevNum2 = 0;
+
+      // First 2 numbers in Fibonacci sequence
+      Console.WriteLine(prevNum2);
+      Thread.Sleep(500);
+      Console.WriteLine(prevNum1);
+      Thread.Sleep(500);
+
+      while (!Console.KeyAvailable)
+      {
+        Console.WriteLine(currNum);
+        Thread.Sleep(500);
+
+        prevNum2 = prevNum1;
+        prevNum1 = currNum;
+        currNum = prevNum1 + prevNum2;
+      }
+    } // PrintFibonacci
 
     public void PrintPrimes()
     {
@@ -34,7 +52,6 @@ namespace MathMagician
       Console.WriteLine(3);
       Thread.Sleep(500);
 
-      //int currPrime = 3; 
       int testInt = 5; // Int to test
       bool isPrime = true;
       
@@ -60,7 +77,7 @@ namespace MathMagician
           }
         }
       }
-    }
+    } // PrintPrimes
 
   } // class
 } // namespace
